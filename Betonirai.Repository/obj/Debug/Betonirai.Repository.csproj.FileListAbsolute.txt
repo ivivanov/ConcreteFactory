@@ -1,0 +1,12 @@
+c:\users\iivanov\documents\visual studio 2013\Projects\Betonirai\Betonirai.Repository\obj\Debug\Betonirai.Repository.csprojResolveAssemblyReference.cache
+c:\users\iivanov\documents\visual studio 2013\Projects\Betonirai\Betonirai.Repository\bin\Debug\Betonirai.Repository.dll.config
+c:\users\iivanov\documents\visual studio 2013\Projects\Betonirai\Betonirai.Repository\bin\Debug\Betonirai.Repository.dll
+c:\users\iivanov\documents\visual studio 2013\Projects\Betonirai\Betonirai.Repository\bin\Debug\Betonirai.Repository.pdb
+c:\users\iivanov\documents\visual studio 2013\Projects\Betonirai\Betonirai.Repository\bin\Debug\Betonirai.Data.dll
+c:\users\iivanov\documents\visual studio 2013\Projects\Betonirai\Betonirai.Repository\bin\Debug\EntityFramework.dll
+c:\users\iivanov\documents\visual studio 2013\Projects\Betonirai\Betonirai.Repository\bin\Debug\EntityFramework.SqlServer.dll
+c:\users\iivanov\documents\visual studio 2013\Projects\Betonirai\Betonirai.Repository\bin\Debug\Betonirai.Data.pdb
+c:\users\iivanov\documents\visual studio 2013\Projects\Betonirai\Betonirai.Repository\bin\Debug\EntityFramework.xml
+c:\users\iivanov\documents\visual studio 2013\Projects\Betonirai\Betonirai.Repository\bin\Debug\EntityFramework.SqlServer.xml
+c:\users\iivanov\documents\visual studio 2013\Projects\Betonirai\Betonirai.Repository\obj\Debug\Betonirai.Repository.dll
+c:\users\iivanov\documents\visual studio 2013\Projects\Betonirai\Betonirai.Repository\obj\Debug\Betonirai.Repository.pdb

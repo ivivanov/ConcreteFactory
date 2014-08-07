@@ -1,0 +1,12 @@
+c:\users\iivanov\documents\visual studio 2013\Projects\Betonirai\Betonirai.Data\bin\Release\Betonirai.Data.dll.config
+c:\users\iivanov\documents\visual studio 2013\Projects\Betonirai\Betonirai.Data\bin\Release\Betonirai.Data.dll
+c:\users\iivanov\documents\visual studio 2013\Projects\Betonirai\Betonirai.Data\bin\Release\Betonirai.Data.pdb
+c:\users\iivanov\documents\visual studio 2013\Projects\Betonirai\Betonirai.Data\bin\Release\EntityFramework.dll
+c:\users\iivanov\documents\visual studio 2013\Projects\Betonirai\Betonirai.Data\bin\Release\EntityFramework.SqlServer.dll
+c:\users\iivanov\documents\visual studio 2013\Projects\Betonirai\Betonirai.Data\bin\Release\EntityFramework.xml
+c:\users\iivanov\documents\visual studio 2013\Projects\Betonirai\Betonirai.Data\bin\Release\EntityFramework.SqlServer.xml
+c:\users\iivanov\documents\visual studio 2013\Projects\Betonirai\Betonirai.Data\obj\Release\Betonirai.Data.Migrations.Initial.resources
+c:\users\iivanov\documents\visual studio 2013\Projects\Betonirai\Betonirai.Data\obj\Release\Betonirai.Data.Migrations.runSeed.resources
+c:\users\iivanov\documents\visual studio 2013\Projects\Betonirai\Betonirai.Data\obj\Release\Betonirai.Data.csproj.GenerateResource.Cache
+c:\users\iivanov\documents\visual studio 2013\Projects\Betonirai\Betonirai.Data\obj\Release\Betonirai.Data.dll
+c:\users\iivanov\documents\visual studio 2013\Projects\Betonirai\Betonirai.Data\obj\Release\Betonirai.Data.pdb
