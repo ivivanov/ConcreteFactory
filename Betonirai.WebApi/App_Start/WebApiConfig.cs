@@ -29,6 +29,7 @@ namespace Betonirai.WebApi
             var jsonFormatter = config.Formatters.OfType<JsonMediaTypeFormatter>().First();
             jsonFormatter.SerializerSettings.ContractResolver = new CamelCasePropertyNamesContractResolver();
 
+            //
             //enforce this filter over the entire Web API
             //config.Filters.Add(new ForceHttpsAttribute());
         }
