@@ -12,25 +12,4 @@ var ngApp = angular
             .when('/calculator/step2', { templateUrl: 'views/calculator funnel/step2.html' })
             .when('/calculator/step3', { templateUrl: 'views/calculator funnel/step3.html' })
             .otherwise({ redirectTo: '/home' });
-    })
-    .factory('orderDetails', function () {
-        return {
-            to: {},
-            distance: 0,
-            selectedItem: 0,
-            items: [
-                { name: "Цимент" },
-                { name: "Бетон" },
-                { name: "Пясък" }
-            ],
-            quantity: 1,
-            measure: 'kg',
-            comment: '',
-            email: '',
-            phone: '',
-            deliveryDate: new Date(),
-            deliveryTime: new Date(),
-            orderDate: '',
-            orderTime: '',
-        };
     });

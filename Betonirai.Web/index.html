@@ -7,6 +7,7 @@
     <link rel="stylesheet" href="css/bootstrap-theme.min.css" />
     <link rel="stylesheet" href="css/app.css" />
     <script type="text/javascript" src="http://maps.googleapis.com/maps/api/js?libraries=places&sensor=false"></script>
+    <script type="text/javascript" src="http://www.google.com/recaptcha/api/js/recaptcha_ajax.js"></script>
 </head>
 <body ng-app="ngApp" ng-cloak>
 
@@ -82,9 +83,12 @@
     <!--Data-->
     <script src="js/services/priceListData.js"></script>
     <script src="js/services/caruselData.js"></script>
+    <script src="js/services/orderDetailsData.js"></script>
+    <script src="js/services/recaptchaService.js"></script>
     
     <!--Directives-->
     <script src="js/directives/caruselDirective.js"></script>
+    <script src="js/directives/reCaptchaDirective.js"></script>
     <script src="lib/ui-bootstrap-tpls-0.11.0.min.js"></script>
 
     <!--Datepicker translation-->

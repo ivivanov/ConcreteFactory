@@ -2,6 +2,7 @@
 
 ngApp.controller('ContactsController',
     function ContactsController($scope) {
+        $scope.privateKey = "6Lc-kPQSAAAAAJVg0bbCgz3BtYbW4-bmooFYXxnm";
         // defaults for your business location and blurb
         var Location = new google.maps.LatLng(42.6707206, 23.32162679999999);
         var infoWindow = "<b>Tuka sum si doma :D</b><br/>Krichim 1<br/>1407 Sofia";

@@ -7,7 +7,7 @@ ngApp.directive('recaptcha', function () {
         debugger
         Recaptcha.create(scope.privateKey, attrs.id,
            {
-               theme: "red",
+               theme: "clean",
                callback: Recaptcha.focus_response_field
            }
          );
