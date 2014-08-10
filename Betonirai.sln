@@ -9,7 +9,7 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Betonirai.Repository", "Bet
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Betonirai.WebApi", "Betonirai.WebApi\Betonirai.WebApi.csproj", "{7F345BEF-51E4-4D5B-827A-6DD18455EC3B}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Grimit.Web", "Grimit.Web\Grimit.Web.csproj", "{70FE62A7-40DF-40BC-A5F7-DE893AD3BB05}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Betonirai.Web", "Grimit.Web\Betonirai.Web.csproj", "{70FE62A7-40DF-40BC-A5F7-DE893AD3BB05}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
