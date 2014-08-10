@@ -1,0 +1,23 @@
+﻿<div ng-controller="CaruselController">
+    <div id="myCarousel" class="carousel slide" data-ride="carousel">
+        <!-- Indicators -->
+        <ol class="carousel-indicators">
+            <li data-target="#myCarousel" data-slide-to="{{image.id}}" class="{{image.isActive}}" ng-repeat="image in images"></li>
+        </ol>
+
+        <div class="carousel-inner">
+            <div class="item {{image.isActive}}" ng-repeat="image in images">
+                <img class="carusel-image" src="{{image.imageSource}}">
+                <div class="container">
+                    <div class="carousel-caption">
+                        <h1>{{image.header}}</h1>
+                        <p>{{image.description}}</p>
+                        <p><a class="btn btn-lg btn-primary" href="#" role="button">Browse gallery</a></p>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <a id="nextPic" class="left carousel-control"><span class="glyphicon glyphicon-chevron-left"></span></a>
+        <a id="prevPic" class="right carousel-control"><span class="glyphicon glyphicon-chevron-right"></span></a>
+    </div>
+</div>

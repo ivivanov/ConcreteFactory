@@ -1,0 +1,39 @@
+﻿<div ng-controller="Step3Controller">
+    <div class="row">
+        <div class="col-md-3">
+            <a href="#/{{previous}}" class="{{statePrev}} btn btn-primary">← Предишна</a>
+        </div>
+        <div class="col-md-6">
+            <div class="progress topMargin progress-striped active">
+                <div class="progress-bar" style="width: {{step}};"></div>
+            </div>
+        </div>
+        <div class="col-md-3">
+            
+        </div>
+    </div>
+
+    <div class="row">
+        <div class="col-md-12 text-center">
+            <h3>Преглед на заявката</h3>
+        </div>
+    </div>
+
+    <div class="row">
+        <div class="col-md-12">
+            <div class="well  well-lg">
+                <p><strong>От: </strong>{{from}}</p>
+                <p><strong>До: </strong>{{to}}</p>
+                <p><strong>Разстояние: </strong>{{distance}}</p>
+                <p><strong>Стока: </strong>{{quantity}} {{measure}} {{item}}</p>
+                <p><strong>Дата и час за доставка:</strong> {{deliveryDate | date:'fullDate'}} в {{deliveryTime | date:'shortTime'}}</p>
+                <p><strong>Обратна връзка:</strong></p>
+                <p class="malkoMargin">{{email}}</p>
+                <p class="malkoMargin">{{phone}}</p>
+                <p><strong>Коментар:</strong></p>
+                <p class="malkoMargin">{{comment}}</p>
+                <p><a href="#/Success" class="btn btn-primary" ng>Изпрати</a><div class="alert alert-info">Внимание това не е поръчка. След преглеждане на запитването служител на BetMax ще се свърже с вас за да ви информира за цена и допълнителни детайли.</div></p>
+            </div>
+        </div>
+    </div>
+</div>

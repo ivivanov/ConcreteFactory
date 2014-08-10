@@ -1,0 +1,86 @@
+body {
+    background-color: #f1f1f1;
+    padding-top: 70px;
+    background-image: url(../img/bgr.png);
+    overflow: scroll;
+}
+
+.topMargin {
+    margin-top: 5px;
+}
+
+input.ng-invalid {
+    background-color: rgba(215, 49, 44, 0.5);
+}
+
+#deliveryData {
+    display: inline-block;
+    min-height: 290px;
+}
+
+.malkoMargin {
+    margin-left: 20px;
+}
+
+/*#myCarousel {
+    height: 60%;
+    width: auto;
+}*/
+
+/*.carusel-image {
+  position: absolute;
+  top: 0;
+  left: 0;
+  min-width: 100%;
+  height: 100px;
+  max-width: none;
+}*/
+
+footer {
+    margin-top: 20px;
+}
+
+/*Contacts map*/
+@media all and (min-width: 1000px) {
+    #map_canvas {
+        width: 100%;
+        height: 400px;
+    }
+}
+
+@media all and (min-width: 700px) and (max-width: 1000px) {
+    #map_canvas {
+        width: 100%;
+        height: 250px;
+    }
+}
+
+
+@media all and (max-width: 699px) {
+    #map_canvas {
+        width: 100%;
+        height: 250px;
+    }
+}
+
+/*step 1 map*/
+@media all and (min-width: 1000px) {
+    #step1_map {
+        width: 100%;
+        height: 400px;
+    }
+}
+
+@media all and (min-width: 700px) and (max-width: 1000px) {
+    #step1_map {
+        width: 100%;
+        height: 300px;
+    }
+}
+
+
+@media all and (max-width: 699px) {
+    #step1_map {
+        display: none;
+    }
+}

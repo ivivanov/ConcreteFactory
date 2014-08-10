@@ -1,0 +1,42 @@
+﻿<div ng-controller="Step1Controller">
+    <div class="row">
+        <div class="col-md-3">
+            
+        </div>
+        <div class="col-md-6">
+            <div class="progress topMargin progress-striped active">
+                <div class="progress-bar" style="width: {{step}};"></div>
+            </div>
+        </div>
+        <div class="col-md-3">
+            <a href="#/{{next}}" class="{{stateNext}} btn btn-primary pull-right">Следваща →</a>
+        </div>
+    </div>
+
+    <div class="row">
+        <div class="col-md-12 text-center">
+            <h3>Изберете крайна точка за доставка</h3>
+        </div>
+    </div>
+
+    <div class="row">
+        <div class="col-md-10">
+            <input id="adress-input" type="text" class="form-control" placeholder="Адрес за доставка" ng-model="destinationAddress">
+        </div>
+        <div class="col-md-2 well well-sm">
+            Разстояние: {{totalKm}} km
+        </div>
+    </div>
+    <br />
+
+    <div class="row">
+        <div class="col-md-12">
+            <div class="container">
+                <div class='row'>
+                    <div class="col-lg-9" id="step1_map">
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>

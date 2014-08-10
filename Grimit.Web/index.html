@@ -1,0 +1,93 @@
+﻿<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <title>Concrete factory</title>
+    <link rel="stylesheet" href="css/bootstrap.min.css" />
+    <link rel="stylesheet" href="css/bootstrap-theme.min.css" />
+    <link rel="stylesheet" href="css/app.css" />
+    <script type="text/javascript" src="http://maps.googleapis.com/maps/api/js?libraries=places&sensor=false"></script>
+</head>
+<body ng-app="ngApp" ng-cloak>
+
+    <header>
+        <div class="navbar navbar-default navbar-fixed-top">
+            <div class="container">
+                <div class="navbar-header">
+                    <a href="#/home" class="navbar-brand">Concrete Factory</a>
+                    <!--Responsive navbar-->
+                    <button class="navbar-toggle" type="button" data-toggle="collapse" data-target="#navbar-main">
+                        <span class="icon-bar"></span>
+                        <span class="icon-bar"></span>
+                        <span class="icon-bar"></span>
+                        <span class="icon-bar"></span>
+                    </button>
+                </div>
+                <div class="navbar-collapse collapse" id="navbar-main">
+                    <ul class="nav navbar-nav">
+                        <li>
+                            <a href="#/price-list">Цени</a>
+                        </li>
+                        <li>
+                            <a href="#/calculator/step1">Калкулатор</a>
+                        </li>
+                        <li>
+                            <a href="#/contacts">Контакти</a>
+                        </li>
+                        <li>
+                            <a href="#/upload-price-list">Обновяване на ценова листа</a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </header>
+
+    <div class="container">
+
+        <section>
+            <div ng-view>
+            </div>
+        </section>
+
+    </div>
+
+    <footer>
+        <div>
+            <div class='container text-center'>
+                <h5>Copyright © 2014 Don beton corp</h5>
+                <h6>Web studio</h6>
+            </div>
+        </div>
+    </footer>
+    <!--Libs-->
+    <script src="lib/jquery-2.1.1.js"></script>
+    <script src="lib/bootstrap.min.js"></script>
+    <script src="lib/angular/angular.js"></script>
+    <script src="lib/angular/angular-resource.min.js"></script>
+    <script src="lib/angular/angular-route.min.js"></script>
+    
+    <script src="js/app.js" charset="UTF-8"></script>
+    <script src="js/siteScripts.js"></script>
+    
+    <!--Controllers-->
+    <script src="js/controllers/HomeController.js"></script>
+    <script src="js/controllers/PriceListController.js"></script>
+    <script src="js/controllers/shared/CaruselController.js"></script>
+    <script src="js/controllers/ContactsController.js"></script>
+    <script src="js/controllers/calculator/Step1Controller.js"></script>
+    <script src="js/controllers/calculator/Step2Controller.js"></script>
+    <script src="js/controllers/calculator/Step3Controller.js"></script>
+    
+    <!--Data-->
+    <script src="js/services/priceListData.js"></script>
+    <script src="js/services/caruselData.js"></script>
+    
+    <!--Directives-->
+    <script src="js/directives/caruselDirective.js"></script>
+    <script src="lib/ui-bootstrap-tpls-0.11.0.min.js"></script>
+
+    <!--Datepicker translation-->
+    <script src="https://code.angularjs.org/1.0.8/i18n/angular-locale_bg-bg.js"></script>
+</body>
+</html>
