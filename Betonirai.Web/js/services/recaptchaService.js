@@ -6,13 +6,8 @@ ngApp.service('recaptchaService', function ($http, $q) {
 
         var request = $http({
             method: "post",
-            url: "api/ReCaptcha",
-            params: {
-                action: "add"
-            },
-            data: {
-                name: name
-            }
+            url: "http://betonirai.azurewebsites.net/api/ReCaptcha",
+            data: recaptchaParams
         });
 
         return (request.then(handleSuccess, handleError));
