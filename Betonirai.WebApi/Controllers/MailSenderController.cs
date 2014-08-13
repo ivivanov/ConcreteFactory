@@ -1,6 +1,7 @@
 ﻿using Betonirai.WebApi.Business;
 using Betonirai.WebApi.Models;
 using System;
+using System.Collections.Generic;
 using System.Net;
 using System.Net.Http;
 using System.Web;
@@ -10,6 +11,11 @@ namespace Betonirai.WebApi.Controllers
 {
     public class MailSenderController : BaseApiController
     {
+        const string Recipient = "ivanivanov12@gmail.com";
+        const string Subject = "Web Api mail";
+        
+        public IEnumerable<string> BccRecipients { get; set; }
+
         [HttpPost]
         [ActionName("SendMail")]
         public HttpResponseMessage SendMailWithCaptchaVerification(Mail mail)
@@ -38,7 +44,7 @@ namespace Betonirai.WebApi.Controllers
 
             if (captchaResponse)
             {
-                MailSender.Instance.SendMail(mail.Recipient, mail.Subject, mail.MessageBody, mail.BccRecipients);
+                MailSender.Instance.SendMail(Recipient, Subject, mail.MessageBody, BccRecipients);
                 return new HttpResponseMessage(HttpStatusCode.OK) { ReasonPhrase = "successfully send mail" };
             }
 
