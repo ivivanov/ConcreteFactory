@@ -4,6 +4,7 @@ using System;
 using System.Collections.Generic;
 using System.Net;
 using System.Net.Http;
+using System.Threading.Tasks;
 using System.Web;
 using System.Web.Mvc;
 
@@ -13,7 +14,7 @@ namespace Betonirai.WebApi.Controllers
     {
         const string Recipient = "ivanivanov12@gmail.com";
         const string Subject = "Web Api mail";
-        
+
         public IEnumerable<string> BccRecipients { get; set; }
 
         [HttpPost]
@@ -36,7 +37,18 @@ namespace Betonirai.WebApi.Controllers
             captchaParameters.Response = mail.recaptcha_response_field;
             captchaParameters.RemoteIP = ip;
 
-            var response = ReCaptcha.Instance.CheckCaptchaAsync(captchaParameters);
+            Logger.LogMessage(String.Format("{0}  {1}  {2} ", captchaParameters.Challenge, captchaParameters.Response, captchaParameters.RemoteIP));
+            Task<string> response = null;
+
+            try
+            {
+                response = ReCaptcha.Instance.CheckCaptchaAsync(captchaParameters);
+            }
+            catch (Exception ex)
+            {
+                Logger.LogExeption(ex);
+            }
+
             string responseString = response.Result.ToString();
             string[] splittedByNewLine = responseString.Split(new string[] { Environment.NewLine }, StringSplitOptions.None);
 

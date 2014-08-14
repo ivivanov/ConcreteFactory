@@ -1,5 +1,6 @@
 ﻿'use strict';
 //http://betonirai.azurewebsites.net/api/ReCaptcha
+//url: "http://localhost:59218/api/MailSender",
 
 ngApp.service('betoniraiWebApi', function ($http, $q) {
 
@@ -18,7 +19,7 @@ ngApp.service('betoniraiWebApi', function ($http, $q) {
 
         var request = $http({
             method: "post",
-            url: "http://localhost:59218/api/MailSender",
+            url: "http://betonirai.azurewebsites.net/api/MailSender",
             data: params
         });
 
