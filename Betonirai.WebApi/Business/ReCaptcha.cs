@@ -11,7 +11,7 @@ namespace Betonirai.WebApi.Business
 {
     public sealed class ReCaptcha
     {
-        private const string PrivateKey = "6LdRxfcSAAAAAGa8DtTyZ9rRS17zZZX_19KWumLx";
+        private const string PrivateKey = "";
         private static readonly object SyncRoot = new object();
         private static ReCaptcha instance;
 
