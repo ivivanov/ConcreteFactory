@@ -6,7 +6,7 @@ ngApp.directive('recaptcha', function () {
         restrict: 'A',
         transclude: true,
         compile: function (element, attributes) {
-            Recaptcha.create("6Lc-kPQSAAAAAJVg0bbCgz3BtYbW4-bmooFYXxnm", attributes.id, {
+            Recaptcha.create("", attributes.id, {
                 theme: "clean",
                 callback: function () {
                     Recaptcha.focus_response_field;

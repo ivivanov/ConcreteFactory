@@ -10,7 +10,7 @@
         // TODO: Extract user, address and password as app.config settings
         private const string SendFrom = "me@ivivanov.com";
         private const string SendFromName = "ivivanov.com";
-        private const string Password = "Diablolove";
+        private const string Password = "";
         private const string ServerAddress = "smtp.gmail.com";
         private const int ServerPort = 587;
 
