@@ -5,7 +5,8 @@ using System.Web;
 
 namespace Betonirai.WebApi.Business
 {
-    public class Logger
+    public sealed class Logger
     {
+
     }
 }
