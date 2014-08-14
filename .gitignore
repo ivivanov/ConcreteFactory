@@ -27,7 +27,8 @@
 *.opensdf
 *.unsuccessfulbuild
 PublishProfiles/
-Business/
+Betonirai.WebApi/Business/MailSender.cs
+Betonirai.WebApi/Business/ReCaptcha.cs
 ipch/
 [Oo]bj/
 [Bb]in
