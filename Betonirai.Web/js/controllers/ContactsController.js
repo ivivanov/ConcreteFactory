@@ -54,8 +54,9 @@ ngApp.controller('ContactsController',
                 recaptcha_response_field: response
             }
 
+
             betoniraiWebApi.sendMail(request,function () {
-                alert("hoho");
+                $('#sendMailModal').modal('show');
             })
         }
     });

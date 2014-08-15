@@ -1,5 +1,6 @@
 ﻿using Betonirai.WebApi.Business;
 using Betonirai.WebApi.Models;
+using Recaptcha;
 using System;
 using System.Collections.Generic;
 using System.Net;
@@ -21,6 +22,15 @@ namespace Betonirai.WebApi.Controllers
         [ActionName("SendMail")]
         public HttpResponseMessage SendMailWithCaptchaVerification(Mail mail)
         {
+            if (String.IsNullOrEmpty(mail.MessageBody))
+            {
+                return new HttpResponseMessage(HttpStatusCode.BadRequest) { ReasonPhrase = "no message"};
+            }
+            if (String.IsNullOrEmpty(mail.SenderMail))
+            {
+                return new HttpResponseMessage(HttpStatusCode.BadRequest) { ReasonPhrase = "no sender" };
+            }
+
             string ip = HttpContext.Current.Request.UserHostAddress;
             //string ip = String.Empty;
             //if (this.ControllerContext.Request.Properties.ContainsKey("MS_HttpContext"))
@@ -37,30 +47,15 @@ namespace Betonirai.WebApi.Controllers
             captchaParameters.Response = mail.recaptcha_response_field;
             captchaParameters.RemoteIP = ip;
 
-            Logger.LogMessage(String.Format("{0}  {1}  {2} ", captchaParameters.Challenge, captchaParameters.Response, captchaParameters.RemoteIP));
-            Task<string> response = null;
+            RecaptchaResponse recaptcha = ReCaptcha.Instance.Validate(captchaParameters);
 
-            try
-            {
-                response = ReCaptcha.Instance.CheckCaptchaAsync(captchaParameters);
-            }
-            catch (Exception ex)
-            {
-                Logger.LogExeption(ex);
-            }
-
-            string responseString = response.Result.ToString();
-            string[] splittedByNewLine = responseString.Split(new string[] { Environment.NewLine }, StringSplitOptions.None);
-
-            bool captchaResponse = bool.Parse(splittedByNewLine[0]);
-
-            if (captchaResponse)
+            if (recaptcha.IsValid)
             {
                 MailSender.Instance.SendMail(Recipient, Subject, mail.MessageBody, BccRecipients);
                 return new HttpResponseMessage(HttpStatusCode.OK) { ReasonPhrase = "successfully send mail" };
             }
 
-            return new HttpResponseMessage(HttpStatusCode.BadRequest) { ReasonPhrase = splittedByNewLine[1] };
+            return new HttpResponseMessage(HttpStatusCode.BadRequest) { ReasonPhrase = recaptcha.ErrorMessage};
         }
     }
 }

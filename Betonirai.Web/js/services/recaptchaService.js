@@ -1,6 +1,7 @@
 ﻿'use strict';
 //http://betonirai.azurewebsites.net/api/ReCaptcha
 //url: "http://localhost:59218/api/MailSender",
+//url: "http://betonirai.azurewebsites.net/api/MailSender",
 
 ngApp.service('betoniraiWebApi', function ($http, $q) {
 
@@ -30,5 +31,5 @@ ngApp.service('betoniraiWebApi', function ($http, $q) {
         checkRecaptcha: checkRecaptcha,
         sendMail: sendMail
     };
-    
+
 });

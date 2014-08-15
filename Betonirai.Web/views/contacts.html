@@ -35,19 +35,21 @@
     </div>
     <div class="col-md-6" ng-controller="ContactsController">
         <h3></h3>
-        <form class="form-horizontal" ng-submit="sendMail()">
+        <div class="loading-spiner-holder" data-loading><div class="loading-spiner"><img src="../img/loading.gif" /></div></div>
+        
+        <form class="form-horizontal loading-hide" ng-submit="sendMail()">
             <div class="form-group">
-                <label for="inputEmail" class="col-lg-2 control-label">Email</label>
+                <label for="inputEmail" class="col-lg-2 control-label">Поща</label>
                 <div class="col-lg-10">
                     <input type="text" class="form-control" id="inputEmail" placeholder="Email" ng-model="email">
+                    <span class="help-block">Моля оставете валидна електронна поща на която да получите отговор.</span>
                 </div>
             </div>
 
             <div class="form-group">
-                <label for="textArea" class="col-lg-2 control-label">Textarea</label>
+                <label for="textArea" class="col-lg-2 control-label">Съобщение</label>
                 <div class="col-lg-10">
                     <textarea class="form-control" rows="3" id="textArea" ng-model="textArea"></textarea>
-                    <span class="help-block">A longer block of help text that breaks onto a new line and may extend beyond one line.</span>
                 </div>
             </div>
 
@@ -71,16 +73,35 @@
 
             <div class="form-group">
                 <div class="col-lg-10 col-lg-offset-2">
-                    <div recaptcha id="recaptch-container"></div>
+                    <div data-recaptcha id="recaptch-container"></div>
+                    <span class="help-block">Напишете това което виждате на картинката.</span>
                 </div>
             </div>
 
             <div class="form-group">
                 <div class="col-lg-10 col-lg-offset-2">
-                    <button class="btn btn-default">Cancel</button>
-                    <button type="submit" class="btn btn-primary">Submit</button>
+                    <button type="submit" class="btn btn-primary">Изпрати</button>
                 </div>
             </div>
         </form>
+    </div>
+</div>
+
+<!-- Modal -->
+<div class="modal fade" id="sendMailModal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+    <div class="modal-dialog">
+        <div class="modal-content">
+            <div class="modal-header">
+                <button type="button" class="close" data-dismiss="modal"><span aria-hidden="true">&times;</span><span class="sr-only">Close</span></button>
+                <h4 class="modal-title" id="myModalLabel">Успешно изпратено съобщение</h4>
+            </div>
+            <div class="modal-body">
+                <p>Екипът на БЕТМАКС ще отговори в най-кратък срок.</p>
+                <p>Благодарим ви</p>
+            </div>
+            <div class="modal-footer">
+                <button type="button" class="btn btn-default" data-dismiss="modal">Затвори</button>
+            </div>
+        </div>
     </div>
 </div>
