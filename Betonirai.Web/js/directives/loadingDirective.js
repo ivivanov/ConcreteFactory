@@ -19,5 +19,5 @@ ngApp.directive('loading', ['$http', function ($http) {
                 }
             });
         }
-    };
+    }; 
 }]);
