@@ -97,7 +97,6 @@
     <Content Include="js\controllers\HomeController.js" />
     <Content Include="js\controllers\PriceListController.js" />
     <Content Include="js\controllers\shared\CaruselController.js" />
-    <Content Include="js\controllers\shared\LoadingCotroller.js" />
     <Content Include="js\directives\caruselDirective.js" />
     <Content Include="js\directives\loadingDirective.js" />
     <Content Include="js\directives\reCaptchaDirective.js" />

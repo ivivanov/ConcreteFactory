@@ -6,9 +6,9 @@ ngApp.controller('ContactsController',
         $scope.textArea = "";
 
         // defaults for your business location and blurb
-        var Location = new google.maps.LatLng(42.6707206, 23.32162679999999);
-        var infoWindow = "<b>Tuka sum si doma :D</b><br/>Krichim 1<br/>1407 Sofia";
-        var markerHoverTitle = "Te tuka";
+        var Location = new google.maps.LatLng(42.743248, 23.409862);
+        var infoWindow = "<b>Бетонов възел - BetMax</b><br/><em>Гр. София, ул. Чепинско шосе</em>";
+        var markerHoverTitle = "Sofia, България";
         var directionsService = new google.maps.DirectionsService();
         var directionsDisplay = new google.maps.DirectionsRenderer({
             draggable: true
@@ -16,7 +16,7 @@ ngApp.controller('ContactsController',
 
         var mapOptions = {
             center: Location,
-            zoom: 15,
+            zoom: 12,
             mapTypeId: google.maps.MapTypeId.ROADMAP
         };
 

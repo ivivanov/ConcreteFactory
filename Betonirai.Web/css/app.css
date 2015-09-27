@@ -84,3 +84,50 @@ footer {
         display: none;
     }
 }
+
+.logo {
+    text-decoration: none;
+    font-size: 130%;
+    color: white;
+    padding-right: 25px;
+}
+
+    .logo:hover {
+        text-decoration: none;
+    }
+
+    .logo:link {
+        color: white;
+        font-size: 1.1em;
+        font-weight: 600;
+        font-family: arial, helvetica, sans-serif;
+        text-decoration: none;
+    }
+
+    .logo:visited {
+        color: white;
+        font-size: 1.1em;
+        font-weight: 600;
+        font-family: arial, helvetica, sans-serif;
+        text-decoration: none;
+    }
+
+    .logo:hover {
+        color: white;
+        font-size: 1.1em;
+        font-weight: 600;
+        font-family: arial, helvetica, sans-serif;
+        text-decoration: none;
+    }
+
+    .logo:active {
+        color: white;
+        font-size: 1.1em;
+        font-weight: 600;
+        font-family: arial, helvetica, sans-serif;
+        text-decoration: none;
+    }
+
+    .logo img {
+        border: none;
+    }

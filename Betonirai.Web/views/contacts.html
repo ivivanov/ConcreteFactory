@@ -10,46 +10,50 @@
     <div class="col-md-5 col-md-offset-1">
         <div>
             <h3>Контакти</h3>
-            <h4>Гримит ООД - Цецо Бетона</h4>
+            <h4>BetMax ООД - Цветан Ценов</h4>
             <p>
-                <strong>
-                    Телефон:
-                </strong>0888 124 124
+                <strong>Телефони:</strong><br />
+                088 440 0205<br />
+                088 700 0015
             </p>
             <p>
                 <strong>
                     Факс:
-                </strong>+41232 23423
+                </strong>02 996 29 30
             </p>
             <p>
                 <strong>
                     Поща:
-                </strong>wewe@asd.cd
+                </strong>grimit.beton@abv.bg
             </p>
             <p>
                 <strong>
                     Адрес:
-                </strong>Върбишки проход 444
+                </strong>
+                <br />Град София
+                <br />Ул. Чепинско шосе
+
             </p>
         </div>
     </div>
+
     <div class="col-md-6" ng-controller="ContactsController">
-        <h3></h3>
+        <h3>Изпратете запитване</h3>
         <div class="loading-spiner-holder" data-loading><div class="loading-spiner"><img src="../img/loading.gif" /></div></div>
         
         <form class="form-horizontal loading-hide" ng-submit="sendMail()">
             <div class="form-group">
-                <label for="inputEmail" class="col-lg-2 control-label">Поща</label>
+                <!--<label for="inputEmail" class="col-lg-2 control-label">Поща</label>-->
                 <div class="col-lg-10">
-                    <input type="text" class="form-control" id="inputEmail" placeholder="Email" ng-model="email">
+                    <input type="text" class="form-control" id="inputEmail" placeholder="вашата поща" ng-model="email">
                     <span class="help-block">Моля оставете валидна електронна поща на която да получите отговор.</span>
                 </div>
             </div>
 
             <div class="form-group">
-                <label for="textArea" class="col-lg-2 control-label">Съобщение</label>
+                <!--<label for="textArea" class="col-lg-2 control-label">Съобщение</label>-->
                 <div class="col-lg-10">
-                    <textarea class="form-control" rows="3" id="textArea" ng-model="textArea"></textarea>
+                    <textarea class="form-control" rows="3" id="textArea" ng-model="textArea" placeholder="вашето съобщение"></textarea>
                 </div>
             </div>
 
@@ -71,15 +75,15 @@
                 </div>
             </div>-->
 
-            <div class="form-group">
+            <!--<div class="form-group">
                 <div class="col-lg-10 col-lg-offset-2">
                     <div data-recaptcha id="recaptch-container"></div>
                     <span class="help-block">Напишете това което виждате на картинката.</span>
                 </div>
-            </div>
+            </div>-->
 
             <div class="form-group">
-                <div class="col-lg-10 col-lg-offset-2">
+                <div class="col-lg-10">
                     <button type="submit" class="btn btn-primary">Изпрати</button>
                 </div>
             </div>
