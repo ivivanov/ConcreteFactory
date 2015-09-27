@@ -11,15 +11,15 @@ ngApp.factory('priceListData', function () {
                         name: "Бетон-помпа 28м. - до 30 кубика"
                     },
                     {
-                        number: 1,
+                        number: 2,
                         name: "Бетон-помпа 36м. - до 30 кубика"
                     },
                     {
-                        number: 1,
+                        number: 3,
                         name: "Бетон-помпа 42м. - до 30 кубика"
                     },
                     {
-                        number: 1,
+                        number: 4,
                         name: "Бетон-помпа 53м. - до 30 кубика"
                     }
                 ]

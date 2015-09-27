@@ -13,3 +13,10 @@ var ngApp = angular
             //.when('/calculator/step3', { templateUrl: 'views/calculator funnel/step3.html' })
             .otherwise({ redirectTo: '/home' });
     });
+
+
+$(function () {
+    $('#navbar-main').click('li', function () {
+        $('#navbar-main').collapse('hide');
+    });
+});
